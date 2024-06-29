@@ -26,9 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/location_pin_alt_1_svgrepo_com"
         android:drawablePadding="15dp"
         android:textSize="20sp"
+        app:drawableLeftCompat="@drawable/location_pin_alt_1_svgrepo_com"
         app:layout_constraintEnd_toEndOf="@+id/searchView"
         app:layout_constraintStart_toStartOf="@+id/searchView"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
@@ -54,7 +54,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/merriweathersans_semibold"
-        android:text="00:00°C"
+        android:text="@string/_00_00_c"
         android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
@@ -178,7 +178,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/humidity" />
@@ -201,7 +201,7 @@
                     android:gravity="center"
                     android:text="@string/humidity"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -213,7 +213,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/wind" />
@@ -236,7 +236,7 @@
                     android:gravity="center"
                     android:text="@string/wind_speed"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -248,7 +248,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/conditions" />
@@ -272,7 +272,7 @@
                     android:gravity="center"
                     android:text="@string/conditions"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -284,7 +284,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/sunrise" />
@@ -305,9 +305,9 @@
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="sunRise"
+                    android:text="@string/sunrise"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -319,6 +319,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/sunset" />
@@ -339,9 +340,9 @@
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:fontFamily="@font/merriweathersans_medium"
                     android:gravity="center"
-                    android:text="Sunset"
+                    android:text="@string/sunset"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -353,7 +354,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-
+                    android:contentDescription="@string/my_image_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/sea" />
@@ -376,7 +377,7 @@
                     android:gravity="center"
                     android:text="@string/sea"
                     android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
