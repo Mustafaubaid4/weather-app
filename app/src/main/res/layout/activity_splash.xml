@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/spalsh_screen"
+    android:layout_height="match_parent"
+    tools:context=".splash_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="211dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/white_cloud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweathersans_medium"
+        android:layout_marginTop="36dp"
+        android:text="@string/weather_matters_nwe_ve_got_the_detail"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/develop_by_nmustafa_ubaid"
+        android:textColor="@color/white"
+        android:fontFamily="@font/merriweathersans_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.876" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
